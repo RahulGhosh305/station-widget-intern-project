@@ -7,21 +7,21 @@ export const FMContext = createContext()
 
 const appStyle = {
   backgroundColor: '#20202b',
-  height: '150vh',
-  paddingTop: '15px'
+  height: '100vh',
+  paddingTop: '10px'
 }
 
 function App() {
   const [FMname, setFMname] = useState(false)
 
   return (
-    <FMContext.Provider value={[FMname, setFMname]}>
-      <div style={appStyle}>
+    <div style={appStyle}>
+      <FMContext.Provider value={[FMname, setFMname]}>
         <StationHeader />
         <StationBody />
         <StationFooter />
-      </div>
-    </FMContext.Provider>
+      </FMContext.Provider>
+    </div>
   );
 }
 

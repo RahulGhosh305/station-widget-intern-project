@@ -2,52 +2,59 @@
   display: flex;
   justify-content: center;
 }
+.cardInner{
+  height : 400px;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0; 
+  /* background: transparent; */
+}
+.CustomCard>div :last-child hr {
+  display: none;
+}
 .accordionWrapper {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 .accordionWrapper hr {
-    margin : 0 auto;
+  margin: 0 auto;
 }
 
 .contents {
-    padding: 5px 20px;
-    color : #a3acbe;
-    display: flex;
-    justify-content: space-between;
-}
-.contents p {
-    font-size: 26px;
-    margin-top: 5px;
+  padding: 5px 20px;
+  color: #a3acbe;
+  display: flex;
+  justify-content: space-between;
 }
 .horizontal {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    border: 1px solid #a3acbe;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid #a3acbe;
 }
 .contentWrapper button {
-    background-color: transparent;
-    border: none;
-    margin-left: 15px;
-    margin-right: 15px;
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.contentWrapper{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 .minus {
-    width : 35px;
-    margin-left: 5px;
-} 
+  width: 35px;
+  margin-left: 5px;
+}
 .plus {
-    width : 35px;
-    margin-right: 5px;
+  width: 35px;
+  margin-right: 5px;
 }
 .radio {
-    width : 45%
+  width: 45%;
 }
 
 .accordion {
@@ -64,4 +71,3 @@
 .displayShow {
   display: block;
 }
-

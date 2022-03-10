@@ -27,7 +27,7 @@ const StationBody = () => {
             <div className="container">
                 <div className="row">
                     <div className={styles.CustomCard}>
-                        <div className="col-sm-4" style={{ backgroundColor: "#2b2b35" }}>
+                        <div className={`col-sm-4 ${styles.cardInner}`} style={{ backgroundColor: "#2b2b35" }}>
                             {
                                 AppData.map((item, index) => {
                                     const isActive = index === activeIndex;
@@ -62,8 +62,8 @@ const StationBody = () => {
                                                 }
                                             >
                                                 <div className={styles.contents}>
-                                                    <h3>{item.name}</h3>
-                                                    <h3>{item.frequency}</h3>
+                                                    <h4>{item.name}</h4>
+                                                    <h4>{item.frequency}</h4>
                                                 </div>
                                             </div>
                                             <hr className={styles.horizontal} />
