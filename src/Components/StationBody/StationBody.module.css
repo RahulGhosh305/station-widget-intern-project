@@ -1,0 +1,67 @@
+.CustomCard {
+  display: flex;
+  justify-content: center;
+}
+.accordionWrapper {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.accordionWrapper hr {
+    margin : 0 auto;
+}
+
+.contents {
+    padding: 5px 20px;
+    color : #a3acbe;
+    display: flex;
+    justify-content: space-between;
+}
+.contents p {
+    font-size: 26px;
+    margin-top: 5px;
+}
+.horizontal {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid #a3acbe;
+}
+.contentWrapper button {
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.contentWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.minus {
+    width : 35px;
+    margin-left: 5px;
+} 
+.plus {
+    width : 35px;
+    margin-right: 5px;
+}
+.radio {
+    width : 45%
+}
+
+.accordion {
+  padding: 15px 0px;
+}
+.accordionContent {
+  background-color: white;
+  overflow: auto;
+  transition: max-height 0.6s ease;
+}
+.displayNone {
+  display: none;
+}
+.displayShow {
+  display: block;
+}
+

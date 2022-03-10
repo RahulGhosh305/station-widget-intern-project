@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import StationBody from "./Components/StationBody/StationBody";
+import StationFooter from "./Components/StationFooter/StationFooter";
+import StationHeader from "./Components/StattionHeader/StationHeader";
+
+export const FMContext = createContext()
+
+const appStyle = {
+  backgroundColor: '#20202b',
+  height: '150vh',
+  paddingTop: '15px'
+}
 
 function App() {
+  const [FMname, setFMname] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FMContext.Provider value={[FMname, setFMname]}>
+      <div style={appStyle}>
+        <StationHeader />
+        <StationBody />
+        <StationFooter />
+      </div>
+    </FMContext.Provider>
   );
 }
 
