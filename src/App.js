@@ -8,7 +8,7 @@ export const FMContext = createContext()
 const appStyle = {
   backgroundColor: '#20202b',
   height: '100vh',
-  paddingTop: '10px'
+  paddingTop: '20px'
 }
 
 function App() {

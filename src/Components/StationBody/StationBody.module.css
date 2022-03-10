@@ -3,7 +3,7 @@
   justify-content: center;
 }
 .cardInner{
-  height : 400px;
+  height : 380px;
   overflow-y: auto;
 }
 ::-webkit-scrollbar {
@@ -58,7 +58,7 @@
 }
 
 .accordion {
-  padding: 15px 0px;
+  padding: 12px 0px;
 }
 .accordionContent {
   background-color: white;
