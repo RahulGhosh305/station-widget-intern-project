@@ -7,6 +7,7 @@ import styles from './StationBody.module.css'
 import { FMContext } from "../../App";
 const StationBody = () => {
     const [FMname, setFMname] = useContext(FMContext)
+    console.log(FMname);
     const [activeIndex, setActiveIndex] = useState("");
     let NewRefs = [];
     const FindRef = (isActive) => {

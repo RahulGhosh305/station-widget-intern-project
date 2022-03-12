@@ -3,6 +3,7 @@ import { FMContext } from '../../App';
 import styles from './StationFooter.module.css';
 const StationFooter = () => {
     const [FMname, setFMname] = useContext(FMContext)
+    console.log(setFMname);
     return (
         <>
             <div className="container">
